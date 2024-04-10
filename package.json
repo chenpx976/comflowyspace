@@ -26,5 +26,6 @@
     "@types/react-dom": "18.2.7"
   },
   "packageManager": "pnpm@8.6.10",
-  "name": "agent"
+  "name": "agent",
+  "repository": "git@github.com:6174/comflowyspace.git"
 }

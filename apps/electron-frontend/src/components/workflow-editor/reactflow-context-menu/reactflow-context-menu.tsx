@@ -158,10 +158,8 @@ function NodeMenu(props: NodeMenuProps) {
   }
   items.push({ type: "divider" });
 
-  if (hasInputs) {
-    items.push(getMenuItem(<ChangeInputMenuItem {...props} />, 'MENU_ITEM_CHANGE_INPUT', null, null))
-    items.push({ type: "divider" })
-  }
+  items.push(getMenuItem(<ChangeInputMenuItem {...props} />, 'MENU_ITEM_CHANGE_INPUT', null, null))
+  items.push({ type: "divider" })
 
   if (needEditImage(node)) {
     items.push(getMenuItem(<EditImageMenuItem {...props} />, 'MENU_ITEM_EDIT_IMAGE', null, null))
